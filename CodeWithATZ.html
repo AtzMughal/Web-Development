@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATZ PORTFOLIO</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffdfd;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(0, 125, 0);
+            color: #ffff;
+            text-align: center;
+            padding: 1px;
+            margin: auto;
+        }
+
+        form {
+            width: 400px;
+            background-color: #dcedd893;
+            border: 1px solid green;
+            border-radius: 10px;
+            margin: auto;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 4px green;
+        }
+
+        /* HOVER */
+        .hover:hover {
+            box-shadow: 0 0 11px green;
+            transition-duration: 0.4s;
+            padding: 10px 10px 10px 10px;
+        }
+
+        select {
+            width: 124px;
+            padding: 3px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Lucida Sans';
+            padding-bottom: 15px;
+            margin-top: -10px;
+        }
+
+        .input {
+            width: 386px;
+            height: 30px;
+            padding: 5px;
+            background: #e8e8e8;
+            box-shadow: 5px 5px 17px #c8c8c8, -5px -5px 17px #ffffff;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .rlbl,
+        .llbl {
+            margin-left: 20px;
+        }
+
+        /* BUTTON */
+        button {
+            text-align: center;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border: 3px solid green;
+            border-radius: 6px;
+            color: green;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        /* FOOTER COPYRIGHT */
+        .copyright {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        @media screen and (max-width: 700px) {
+            form {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>BIMS STUDENT PORTFOLIO</h1>
+        <p>Enter Your Details In The Given Form</p>
+    </header><br>
+    <form action="#">
+        <div>
+            <h2 style="font-size: 30px; margin-top: 24px;">
+                <b>Fill The Form</b>
+            </h2>
+        </div>
+        <div>
+            <input type="text" class="hover input" placeholder="Enter Your Name" name="Name">
+        </div><br>
+
+        <div>
+            <input type="text" class="hover input" placeholder="Reg No." name="Reg-No.">
+        </div><br>
+
+        <div>
+            <input type="text" class="hover input" placeholder="Enter Your Father's Name" name="Father's-Name">
+        </div><br>
+
+        <div style="text-align: center;
+             padding-bottom: 17px; 
+             font-family: 'Lucida Sans', 'Lucida Sans Regular';
+             text-decoration: underline;">
+            <b>Personal Details</b>
+        </div>
+
+        <div>
+            <input type="text" class="hover input" placeholder="Enter Your CNIC" name="CNIC">
+        </div><br>
+
+        <div>
+            <input type="tel" class="hover input" placeholder="Enter Your Phone No." name="Ph-No.">
+        </div><br>
+
+        <div>
+            <div style="text-align: center; 
+                padding-bottom: 17px; 
+                font-family: 'Lucida Sans', 'Lucida Sans Regular';
+                text-decoration:underline">
+                <b>Enter Your DOB</b>
+            </div>
+            <input style="cursor: pointer;" type="date" class="hover input" placeholder="Enter Your DOB" name="DOB">
+        </div><br>
+
+        <div>Select Gender
+            <label for="male" class="input hover llbl">
+                <input type="radio" name="gnd" id="male">
+                <span id="male">Male</span>
+            </label>
+            <label for="female" class="input hover rlbl">
+                <input type="radio" name="gnd" id="female">
+                <span>Female</span>
+            </label>
+        </div><br>
+
+        <div> Select Degree Program &nbsp;
+            <select name="Program" class="hover input-sel">
+                <option value="BSCS(AI)">BSCS(AI)</option>
+                <option value="BSCS(GC)">BSCS(GC)</option>
+                <option value="BSSE">BSSE</option>
+                <option value="BBA">BBA</option>
+            </select>
+        </div><br>
+
+        <div> Select Your Semester &nbsp;
+            <select name="Semester-No." class="hover input-sel">
+                <option value="1st Semester"> 1st Semester</option>
+                <option value="2nd Semester"> 2nd Semester</option>
+                <option value="3rd Semester"> 3rd Semester</option>
+                <option value="4th Semester"> 4th Semester</option>
+                <option value="5th Semester"> 5th Semester</option>
+                <option value="6th Semester"> 6th Semester</option>
+                <option value="7th Semester"> 7th Semester</option>
+                <option value="8th Semester"> 8th Semester</option>
+            </select>
+        </div><br>
+
+        <div class="text-hover" style="text-align: center; 
+            padding-bottom: 17px; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular';
+            text-decoration: underline;">
+            <b>Sign-In</b>
+        </div>
+
+        <div>
+            <input type="email" class="hover input" placeholder="Enter Your E-Mail" name="E-Mail">
+        </div><br>
+
+        <div>
+            <input type="password" class="hover input" placeholder="Enter Password" name="Password">
+        </div><br>
+
+        <div>
+            <input type="password" class="hover input" placeholder="Confirm Password" name="C-Password">
+        </div><br>
+
+        <div>
+            <label for="checkbox">Are you sure to create BIMS account?</label>
+            <input class="hover" type="checkbox" id="checkbox">
+        </div><br>
+
+        <div>
+            <button class="hover">Create Account</button>
+        </div>
+
+    </form>
+
+    <footer class="copyright">&copy; Copyright 2024 <a href="">AITZAZ MUGHAL</a></footer>
+</body>
+
+</html>
