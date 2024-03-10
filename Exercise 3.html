@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 3</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(235, 232, 232);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            height: 550px;
+            width: 320px;
+            border: solid 2px rgb(214, 212, 212);
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .inside {
+            position: relative;
+            right: 5px;
+        }
+
+        #my-photo {
+            height: 250px;
+            width: 307px;
+            border-radius: 10px;
+            margin: 6px 0px 0px 12px;
+            object-fit: cover;
+            box-shadow: lightblue solid 2px;
+
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .btn1 {
+            margin-left: 20px;
+            margin-right: 3px;
+        }
+
+        .btn2 {
+            margin-right: 3px;
+        }
+
+        .btn {
+            border: 1px solid rgb(189, 182, 182);
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
+            padding: 3px 9px 3px 9px;
+            color: gray;
+            margin-top: 12px;
+            margin-bottom: -15px;
+        }
+
+        h2 {
+            margin: 12px 0px 3px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+        }
+
+        p {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: gray;
+        }
+
+        #more {
+            margin: 12px 0px 0px 110px;
+            width: 110px;
+            border: 1px solid white;
+            border-radius: 25px;
+            height: 40px;
+            width: 105px;
+            font-size: 11px;
+            font-weight: bold;
+            background-color: rgb(226, 245, 255);
+            color: rgb(0, 181, 253);
+            transition: 0.1s;
+        }
+
+        #more:hover {
+            color: rgb(0, 139, 253);
+            background-color: rgb(200, 231, 248);
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="inside">
+            <img id="my-photo"
+                src="https://scontent.fisb13-1.fna.fbcdn.net/v/t39.30808-6/369247538_1053306902712835_805560501867743177_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGS3Ap8tiscUvmKGFR39xVd0KExbeF0stLQoTFt4XSy0vlrJax2w-7HB7vZYSVLD1PA4fh4GcQXmgfOkemNRWEr&_nc_ohc=pxd4uhVTYisAX8L2UyQ&_nc_ht=scontent.fisb13-1.fna&oh=00_AfDWG0FvXcd9jStnbvhpb04KP6NhseVdQjaoNBmjNstDUg&oe=65E3AB66"
+                alt="its-me">
+            <section>
+                <button class="btn1 btn">Photography</button>
+                <button class="btn2 btn">Aesthetic</button>
+                <button class="btn3 btn">Sky</button>
+            </section>
+            <h2>Aitzaz Mughal</h2>
+            </section>
+            <p>Hello there! 👋 I'm Aitzaz Mughal,
+                a dedicated front-end web developer
+                with a love for crafting seamless
+                and visually appealing digital experiences.
+                My journey in the world of web development
+                began with a curiosity for turning ideas
+                into interactive websites.
+            </p>
+            <div>
+                <button id="more">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
